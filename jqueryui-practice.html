@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="http://ui.jquery.com/testing/themes/base/ui.all.css" type="text/css">
   <script type="text/javascript" src="http://ui.jquery.com/testing/ui/ui.core.js"></script>
   <script type="text/javascript" src="http://ui.jquery.com/testing/ui/ui.tabs.js"></script>
+  <script src="http://ui.jquery.com/testing/ui/ui.draggable.js"></script>
+  <script src="http://ui.jquery.com/testing/ui/ui.droppable.js"></script>
 
 
   <script>
@@ -13,16 +15,18 @@
 	$("#tabs").tabs();
 
     // Load files for the drag and drop app
-	$("#drag-n-drop").load("drag-n-drop.html");
+	$("#drag-n-drop").load("drag-n-drop.html #loadable");
 
     // Load files for the professor sorter app
 	$("#professor-sorter").load("professor-sorter.html");
  
     // Load files for the drawing utility
-	("#drawing-util").load("draw-util.html");
+	$("#draw-util").load("draw-util.html");
   });
   </script>
   
+  <script type="text/javascript" src="scripts/drag-n-drop.js"></script>
+  <link rel="stylesheet" href="css/drag-n-drop.css" type="text/css">
 </head>
 <body>
   
@@ -31,7 +35,7 @@
 
                 <li><a id="drag-n-drop-link" href="#drag-n-drop"><span>Drag n' Drop</span></a></li>
                 <li><a id="prof_link" href="#professor-sorter"><span>Guess your professor's age!</span></a></li>
-                <li><a id="draw_util_link" href="#drawing-util"><span>Cheap Visio Knock-off</span></a></li>
+                <li><a id="draw_util_link" href="#draw-util"><span>Cheap Visio Knock-off</span></a></li>
             </ul>
             <div id="drag-n-drop">
                 <!-- this text will be replaced by the html from the load function -->
@@ -39,7 +43,7 @@
             <div id="professor-sorter">
                 <!-- this text will be replaced by the html from the load function -->
             </div>
-            <div id="drawing-util">
+            <div id="draw-util">
                 <!-- this text will be replaced by the html from the load function -->
             </div>
         </div>
