@@ -1,0 +1,1 @@
+Our application is simply a showcase of what JQuery is capable of doing. we are going to incorporate all of the standard widgets in the JQuery UI library to create mini 'games'.
